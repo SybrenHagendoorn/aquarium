@@ -13,12 +13,11 @@ class CreateAquariumTable extends Migration
      */
     public function up()
     {
-        Schema::create('aquarium', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('description');
-            $table->decimal('size' 8);
-        });
+      Schema::create('aquarium', function (Blueprint $table) {
+          $table->increments('id');
+          $table->string('name');
+          $table->decimal('price', 8,2);
+      });
     }
 
     /**

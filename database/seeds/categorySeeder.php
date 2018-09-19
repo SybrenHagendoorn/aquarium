@@ -11,6 +11,11 @@ class categorySeeder extends Seeder
      */
     public function run()
     {
-        //
+          DB::table('categories')->insert([
+            ['name' => 'nederlands zoetwater'],
+            ['name' => 'nederlands zoutwater'],
+            ['name' => 'tropisch zoetwater'],
+            ['name' => 'tropisch zoutwater']
+          ]);
     }
 }

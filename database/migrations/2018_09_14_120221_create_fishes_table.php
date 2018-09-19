@@ -15,9 +15,10 @@ class CreateFishTable extends Migration
     {
         Schema::create('fish', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
             $table->string('water_type');
             $table->string('description');
-            $table->decimal('price' 8,2 );
+            $table->decimal('price', 8,2);
         });
     }
 

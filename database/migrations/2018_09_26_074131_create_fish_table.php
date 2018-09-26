@@ -13,13 +13,13 @@ class CreateFishTable extends Migration
      */
     public function up()
     {
-        Schema::create('fish', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('water_type');
-            $table->string('description');
-            $table->decimal('price', 8,2);
-        });
+      Schema::create('fish', function (Blueprint $table) {
+          $table->increments('id');
+          $table->string('name');
+          $table->string('watertype');
+          $table->string('description');
+          $table->decimal('price', 8,2);
+      });
     }
 
     /**

@@ -16,7 +16,7 @@ class CreateFishCategoriesTable extends Migration
       Schema::create('fish_categories', function (Blueprint $table) {
         $table->integer('fish_id');
         $table->integer("category_id");
-        $table->primary(["fish_id" , "category_id"]);
+        /*$table->primary(["fish_id" , "category_id"]);*/
     });
     }
 
